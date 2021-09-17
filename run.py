@@ -20,7 +20,7 @@ class Planets:
         return "Your weight on {} is {} kg.".format(self.name, my_weight)
 
 
-def let_the_game_beggin():
+def get_the_stats():
     message = ''
     while message != 'N':
         planet = input('Choose a planet: ')
