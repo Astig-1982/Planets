@@ -23,7 +23,7 @@ class Planets:
 def get_the_stats():
     message = ''
     while message != 'N':
-        planet = input('Choose a planet: ')
+        planet = input('Choose a planet: ').lower()
         if planet == 'mercury':
             planet = Planets("Mercury", "2,439.7", "3.285 × 10^23", "5.43", ".38")
         elif planet == 'venus':
@@ -53,3 +53,6 @@ def get_the_stats():
             print(planet.calculate_your_weight(your_weight))
 
         message = input('Play again? ').upper()
+
+
+get_the_stats()
