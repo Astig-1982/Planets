@@ -1,4 +1,5 @@
 class Planets:
+    # this class represents a blueprint for all the planets
     def __init__(self, name, size, weight, density, ratio):
         self.name = name
         self.size = size
@@ -21,8 +22,10 @@ class Planets:
 
 
 def get_the_stats():
+    # this function retrieves the requested information about specific plantes
     message = ''
     while message != 'N':
+        # it takes the user input and based on it, it creates an object based on Plants class
         planet = input('Choose a planet: ').lower()
         if planet == 'mercury':
             planet = Planets("Mercury", "2,439.7", "3.285 × 10^23", "5.43", ".38")
@@ -41,6 +44,7 @@ def get_the_stats():
         elif planet == 'neptune':
             planet = Planets("Neptune", "24,622", "1.024 × 10^26", "1.64", "1.12")
 
+        # it takes the user input and based on it, it calls the relevant method created in Planets class
         spec = input('Choose the spec: size, weight, density, my weight: ')
         if spec == 'size':
             print(planet.planet_size())
