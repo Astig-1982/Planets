@@ -58,5 +58,5 @@ def get_the_stats():
 
         message = input('Play again? ').upper()
 
-
+# executing the function
 get_the_stats()
