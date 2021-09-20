@@ -23,17 +23,21 @@ def get_the_stats():
         elif planet == 'neptune':
             planet = Planets("Neptune", "24,622", "1.024 × 10^26", "1.64", "1.12")
 
+    return planet
+
+        
+def get_all_stats(the_planet):
         # it takes the user input and based on it, it calls the relevant method created in Planets class
         spec = input('Choose the spec: size, weight, density, my weight: ')
         if spec == 'size':
-            print(planet.planet_size())
+            print(the_planet.planet_size())
         elif spec == 'weight':
-            print(planet.planet_weight())
+            print(the_planet.planet_weight())
         elif spec == 'density':
-            print(planet.planet_density())
+            print(the_planet.planet_density())
         elif spec == 'my weight':
             your_weight = input('What is your weight in kg? ')
-            print(planet.calculate_your_weight(your_weight))
+            print(the_planet.calculate_your_weight(your_weight))
 
         message = input('Play again? ').upper()
 
