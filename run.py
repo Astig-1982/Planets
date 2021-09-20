@@ -1,6 +1,6 @@
 from planets import Planets
 
-def get_the_planet():
+def get_started():
     # this function retrieves the requested information about specific plantes
     message = ''
     while message != 'N':
