@@ -22,8 +22,10 @@ def get_the_planet():
             planet = Planets("Uranus", "25,362", "8.681 × 10^25", "1.27", ".88")
         elif planet == 'neptune':
             planet = Planets("Neptune", "24,622", "1.024 × 10^26", "1.64", "1.12")
+        
+        message = 'N'
 
-    return planet
+    get_all_stats(planet)
 
         
 def get_all_stats(the_planet):
@@ -40,9 +42,11 @@ def get_all_stats(the_planet):
             print(the_planet.calculate_your_weight(your_weight))
 
         message = input('Play again? ').upper()
+        if message == 'Y':
+            get_the_planet()
+
 
 # executing the function
-planet = get_the_stats()
-get_all_stats(planet)
+get_the_planet()
 
 
