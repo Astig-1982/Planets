@@ -1,6 +1,6 @@
 from planets import Planets
 
-def get_the_stats():
+def get_the_planet():
     # this function retrieves the requested information about specific plantes
     message = ''
     while message != 'N':
@@ -42,4 +42,7 @@ def get_all_stats(the_planet):
         message = input('Play again? ').upper()
 
 # executing the function
-get_the_stats()
+planet = get_the_stats()
+get_all_stats(planet)
+
+
