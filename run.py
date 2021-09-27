@@ -1,6 +1,6 @@
 from planets import Planets
 
-def get_the_stats():
+def get_started():
     # this function retrieves the requested information about specific plantes
     message = ''
     while message != 'N':
@@ -38,4 +38,4 @@ def get_the_stats():
         message = input('Play again? ').upper()
 
 # executing the function
-get_the_stats()
+get_started()
