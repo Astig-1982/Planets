@@ -1,10 +1,10 @@
 from planets import Planets
 
 def get_started():
-    # this function retrieves the requested information about specific plantes
+    # sets the duration of the game 
     message = ''
     while message != 'N':
-        # it takes the user input and based on it, it creates an object based on Plants class
+        # it takes the user input and based on it, it creates an object based Planets class
         planet = input('Choose a planet: ').lower()
         if planet == 'mercury':
             planet = Planets("Mercury", "2,439.7", "3.285 × 10^23", "5.43", ".38")
